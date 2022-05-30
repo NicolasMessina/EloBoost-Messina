@@ -89,6 +89,22 @@ font {
     font-weight: bold;
 }
 
+.imagenes :hover{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+padding: 30px;
+margin: 10px;
+transition: 3s;
+
+}
+
+nav :hover{
+    font-size: 25px;
+    margin: 10px;
+    padding: 5px;
+    transition: 2s;
+}
+
 
 
 .L {
