@@ -15,7 +15,7 @@
 <body>
     <div class="container">
         <div class="row">
-            <div col-sm-4 col-xl-12>
+            <div class="col-sm-12 col -md-12 col-xl-12">
                 <header class="encabezado">
                     <h1 class="subrayado"> <img class="logo" src="./img/PmOJvSIQ_400x400.jpeg" alt="logo de la pagina">
                         Bienvenidos a
@@ -23,11 +23,11 @@
                 </header>
             </div>
         </div>
+
         <div class="container">
             <div class="nav row">
-                <nav class="navbar navbar-expand-lg navbar-light  pink ">
-                    <div class="container-fluid col-sm-12">
-                        <a class="navbar-brand" href="./index.html">Inicio</a>
+                <nav class="navbar navbar-expand-lg navbar-light pink col-sm-12  col-md-12 col-xl-12">
+                    <div>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                             aria-label="Toggle navigation">
@@ -35,6 +35,9 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav">
+                                <li>
+                                    <a class="navbar-brand" href="./index.html">Inicio</a>
+                                </li>
                                 <li class="nav-item">
                                     <a class="nav-link active" aria-current="page"
                                         href="./pages/Contacto.html">Contacto</a>
@@ -49,23 +52,27 @@
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="./pages/LoL.html">League of Legends</a>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./pages/Valorant.html">Valorant</a>
+                                </li>
                             </ul>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./pages/Valorant.html">Valorant</a>
                         </div>
+                    </div>
                 </nav>
             </div>
         </div>
+
         <div class="ingreso container pink">
             <div class="row">
-                <div>
-                    <form class="col-sm-12 col-xl-12">
+                <div class="col-sm-12 col-md-12 col-xl-12">
+                    <form >
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Email</label>
                             <input type="email" class="form-control" id="exampleInputEmail1"
                                 aria-describedby="emailHelp">
                             <div id="emailHelp" class="form-text">Nunca compartiremos tu email</div>
                         </div>
+
                         <div class="mb-3">
                             <label for="exampleInputPassword1" class="form-label">Contraseña</label>
                             <input type="password" class="form-control" id="exampleInputPassword1">
@@ -80,7 +87,7 @@
 
         <div class="container">
             <div class="row">
-                <div class="padre texto col-sm-12 col-xl-12">
+                <div class="padre texto col-sm-12 col-md-12 col-xl-12">
                     <p class="p1">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime veritatis impedit
                         voluptatibus
@@ -229,6 +236,7 @@
                 </div>
             </div>
         </div>
+
         <div class="imagenes">
             <div id="carouselExampleIndicators" class="carousel slide row" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -327,6 +335,7 @@
                 </li>
             </ul>
         </section>
+
         <footer class="Pie">
             <span>Boosting and coaching es un proyecto para la comision "37420", no estamos ligados al eloboost o
                 venta

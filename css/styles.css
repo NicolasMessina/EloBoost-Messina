@@ -20,7 +20,9 @@ h1 {
     font-family: RobotoFlex;
     text-decoration: underline;
 }
-
+.subtitulo{
+    font-size: 2rem;
+}
 h2 {
     margin: 1px;
     padding: 5px;
@@ -178,7 +180,7 @@ font {
     align-items: flex-end;
 }
 
-@media screen and (max-width:576px){
+@media screen and (max-width:577px){
 .padre{display: flex;
     flex-direction: column;
     }
@@ -187,5 +189,22 @@ font {
         height: 600px;
         padding: 10px;
     }
+    .subtitulo{
+        font-size: 20px;
+    }
     
+}
+
+@media screen and (min-width:768px) {
+    .padre{display: flex;
+        flex-direction: column;
+        }
+        .vinculos {
+            width: 800px;
+            height: 600px;
+            padding: 10px;
+        }
+.subtitulo{
+    font-size: 19px;
+}
 }
