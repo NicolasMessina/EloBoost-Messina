@@ -8,6 +8,9 @@
     src: url(../font/RobotoFlex-VariableFont_GRAD\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf)
 }
 
+body{
+    background-color: #31fab7;
+}
 h1 {
     margin: 0;
     padding: 0;
@@ -22,6 +25,10 @@ h2 {
     margin: 1px;
     padding: 5px;
 
+}
+
+.pink{
+    background-color: pink;
 }
 
 .subrayado {
@@ -89,23 +96,6 @@ font {
     font-weight: bold;
 }
 
-.imagenes :hover{
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-padding: 30px;
-margin: 10px;
-transition: 3s;
-
-}
-
-nav :hover{
-    font-size: 25px;
-    margin: 10px;
-    padding: 5px;
-    transition: 2s;
-}
-
-
 
 .L {
     list-style: none;
@@ -115,8 +105,8 @@ nav :hover{
 }
 
 .vinculos {
-    width: 300px;
-    height: 200px;
+    width: 200px;
+    height: 600px;
     padding: 10px;
 }
 
@@ -129,8 +119,7 @@ nav :hover{
 
 .padre {
     display: flex;
-    flex-direction: column;
-
+    flex-direction: row;
 }
 
 .BoxModel {
@@ -156,8 +145,8 @@ nav :hover{
 .Formulario {
     font-family: RobotoFlex;
     font-weight: 1000;
-    margin: 2px;
-    padding: 0px;
+    margin: 3px;
+    padding: 1px;
 }
 
 .Pie {
@@ -180,7 +169,6 @@ nav :hover{
     background-color: white;
 }
 
-
 .ingreso {
     font-family: RobotoFlex;
     font-size: 1rem;
@@ -190,176 +178,14 @@ nav :hover{
     align-items: flex-end;
 }
 
-.grilla {
-    margin: 0;
-    padding: 0;
-    background-color: #05ce7a;
-    display: grid;
-    grid-template-columns: 30% 52%;
-    grid-template-rows: 0.25fr auto 0.1fr auto auto auto;
-    grid-template-areas: "encabezado encabezado "
-        "nav nav"
-        "ingreso ingreso"
-        "texto texto"
-        "imagenes imagenes"
-        "preguntas preguntas"
-        "Pie Pie";
-}
-
-
-
-.encabezado {
-    grid-area: encabezado;
-}
-
-
-.texto {
-    display: flex;
+@media screen and (max-width:576px){
+.padre{display: flex;
     flex-direction: column;
-    grid-area: texto;
-}
-
-.imagenes {
-    grid-area: imagenes;
-}
-
-.preguntas {
-    grid-area: preguntas;
-}
-
-.Pie {
-    grid-area: Pie;
-}
-
-.nav {
-    grid-area: nav;
-}
-
-.ingreso {
-    grid-area: ingreso;
-}
-
-@media screen and (min-width:800px) {
-    .grilla {
-        background-color: #bcedf3;
-        display: grid;
-        grid-template-columns: 0.60fr 0.40fr;
-        grid-template-rows: repeat(6, auto);
-        grid-template-areas: "encabezado  encabezado"
-            "nav  ingreso"
-            "texto texto"
-            "imagenes  imagenes"
-            "preguntas preguntas"
-            "Pie Pie";
     }
-
-    .texto {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .texto {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .menu li {
-        font-family: Times New Roman;
-        font-weight: bolder;
-        font-size: 20px;
-        color: #9A18C9;
-    }
-
-    .imagenes {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}
-
-.grillaApex {
-    background-color: #05ce7a;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto auto 0.50fr 0.25fr auto auto 0.25fr;
-    grid-template-areas: "titulo titulo"
-        "nav nav "
-        "info precios"
-        "envios envios"
-        "imagen imagen"
-        "Pie Pie"
-    ;
-}
-
-.titulo {
-    grid-area: titulo;
-}
-
-.nav {
-    grid-area: nav;
-}
-
-.info {
-    grid-area: info;
-    margin-top: 10px;
-    padding-top: 10px;
-}
-
-.precios {
-    grid-area: precios;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-
-.envios {
-    grid-area: envios;
-    display: flex;
-    flex-direction: row;
-    font-family: RobotoFlex;
-    font-weight: bold;
-    font-size: 1rem;
-
-
-
-}
-
-.Pie {
-    grid-area: Pie;
-}
-
-.rankapex {
-    grid-area: imagen;
-    padding: 10px;
-}
-
-@media screen and (min-width:800px) {
-    .grillaApex{
-        background-color: #9c5eb9;
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 0.25fr 0.50fr 0.25fr auto auto;
-        grid-template-areas: "titulo titulo"
-        "nav nav "
-        "info precios"
-        "envios envios"
-        "imagen imagen"
-        "Pie Pie";
+    .vinculos {
+        width: 800px;
+        height: 600px;
+        padding: 10px;
     }
     
-    .BoxModel{
-        padding: 32px;
-        margin: 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-    .info{
-        display: flex;
-        flex-direction: column;
-        margin: 1px;
-
-    }
-
 }
